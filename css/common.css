@@ -41,3 +41,8 @@ button {
   max-width: 100%;
   object-fit: cover;
 }
+
+*:focus-visible {
+  outline: 2px double blue;
+  outline-offset: 1.5px;
+}
