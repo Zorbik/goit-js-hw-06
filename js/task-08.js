@@ -8,6 +8,7 @@ function onLoginBtnClick(event) {
 
   if (!element.email.value || !element.password.value) {
     alert("Все поля должны быть заполнены");
+    return;
   }
   const formData = new FormData(event.currentTarget);
 
