@@ -10,12 +10,12 @@ const refs = {
 refs.createBtn.addEventListener("click", handlerAmount);
 refs.destroyBtn.addEventListener("click", destroyBoxes);
 
-function handlerAmount(amount) {
+function handlerAmount(amount = 0) {
   amount = parseInt(refs.input.value);
   сreateBoxes(amount);
 }
 
-function сreateBoxes(amount) {
+function сreateBoxes(amount = 0) {
   let boxes = "";
   for (let i = 0; i < amount; i += 1) {
     boxes += `<div class="box" style="background-color:
