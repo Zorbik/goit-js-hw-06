@@ -4,6 +4,6 @@ const refs = {
 };
 
 const changeTextRange = () =>
-  (refs.textEl.style.fontSize = refs.inputEl.value + "px");
+  (refs.textEl.style.fontSize = `${refs.inputEl.value}px`);
 
 refs.inputEl.addEventListener("input", changeTextRange);

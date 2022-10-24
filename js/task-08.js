@@ -13,7 +13,7 @@ function onLoginBtnClick(event) {
   const formData = new FormData(event.currentTarget);
 
   const data = {};
-  formData.forEach((value, name) => (data[name] = value));
+  formData.forEach((value, key) => (data[key] = value));
   console.log(data);
 
   form.reset();
